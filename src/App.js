@@ -3,6 +3,7 @@ import Home from './home.js';
 import Profile from './profile.js';
 import ReactDOM from 'react-dom';
 // import Add from './Add.js';
+import Comment from './comments.js';
 import { BrowserRouter as Router, Link, NavLink, Redirect } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 
