@@ -4,7 +4,7 @@ import './homestyle.css';
 import Toggle from './toggle';
 import { BrowserRouter as Router, Link, NavLink, Redirect } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
-
+/*{view comments}*/
 class Comment extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +15,7 @@ class Comment extends Component {
     }
 
     componentDidMount() {
-
+        /*{api to fetch comments }*/
         console.log(this.props.match.params.id);
 
         axios.get("https://jsonplaceholder.typicode.com/comments?postId=" + this.props.match.params.id)
@@ -26,8 +26,6 @@ class Comment extends Component {
                 this.setState({ comments });
 
             })
-
-
     }
 
     render() {
